@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" type="text/css" href="http://hd-pro.paperplane.io/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://hd-pro.paperplane.io/assets/css/hd.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://hd-pro.paperplane.io/assets/css/hermes-icons.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lobster|Montserrat:400,500,600' rel='stylesheet' type='text/css'>
+  <style>
+    .sidebar{
+      display: inherit;
+    }
+
+    .sidebar h1{
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+  </div>
+</body>
+<script>
+  window.$docsify = {
+    name: 'hermes-dashboard-pro',
+    repo: '',
+    loadSidebar: true,
+    subMaxLevel: 2,
+    search: 'auto',
+  }
+</script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<!-- Core JS Files -->
+  <script src="http://hd-pro.paperplane.io/assets/js/core/jquery.3.2.1.min.js"></script>
+  <script src="http://hd-pro.paperplane.io/assets/js/core/jquery-ui.min.js"></script>
+  <script src="http://hd-pro.paperplane.io/assets/js/core/popper.min.js"></script>
+  <script src="http://hd-pro.paperplane.io/assets/js/core/bootstrap.min.js"></script>
+  
+  <script src="http://hd-pro.paperplane.io/assets/js/core/material.min.js"></script>
+
+
+  <!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/moment.min.js"></script>
+
+  <!-- Plugin for Charts, full documentation here: https://gionkunz.github.io/chartist-js/ -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/chartist.min.js"></script>
+
+  <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/fullcalendar.min.js"></script>
+
+  <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/jquery-jvectormap.js"></script>
+
+  <!-- Sweet Alert 2 plugin, full documentation here: https://limonte.github.io/sweetlalert2/ -->
+
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/sweetalert2.js"></script>
+  
+  <!-- Plugin for Notifications, full documentation here: http://bootstrap-notify.remabledesigns.com/ -->
+    <script src="http://hd-pro.paperplane.io/assets/js/plugins/bootstrap-notify.js"></script>
+
+    <!--  DataTables.net Plugin, full documentation here: https://datatables.net/    -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/jquery.datatables.js"></script>
+
+    <!--  Google Maps Plugin  -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+
+  <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/bootstrap-datetimepicker.js"></script>
+
+  <!-- Sliders Plugin, full documentation here: https://refreshless.com/nouislider/ -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/nouislider.min.js"></script>
+
+  <!--  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/jquery.select-bootstrap.js"></script>
+
+  <!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+
+  <!-- Forms Validations Plugin -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/jquery.validate.min.js"></script>
+
+  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/jasny-bootstrap.min.js"></script>
+
+  <!-- Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <script src="http://hd-pro.paperplane.io/assets/js/plugins/jquery.tagsinput.js"></script>
+
+  <!-- Hermes Dashboard javascript methods -->
+  <script src="http://hd-pro.paperplane.io/assets/js/hd.js"></script>
+
+  <!-- Hermes Dashboard DEMO methods, don't include it in your project! -->
+  <script src="http://hd-pro.paperplane.io/assets/js/demo.js"></script>
+  <script>
+    $(document).ready(function(){
+          big_image = undefined;
+
+          hd.initSliders();
+
+          demo.initFormExtendedDatetimepickers();
+
+          demo.initMaterialWizard();
+
+          demo.initSmallGoogleMaps();
+
+          demo.initVectorMap();
+
+          demo.initFullCalendar();
+
+        setTimeout(function(){
+            $('.card.wizard-card').addClass('active');
+          },600);
+
+        $('#datatables').DataTable({
+      "pagingType": "full_numbers",
+      "lengthMenu": [[10, 25, 50, -1], [10, 25, 50, "All"]],
+      responsive: true,
+      language: {
+      search: "_INPUT_",
+      searchPlaceholder: "Search records",
+      }
+
+    });
+
+
+    var table = $('#datatables').DataTable();
+
+    // Edit record
+    table.on( 'click', '.edit', function () {
+      $tr = $(this).closest('tr');
+
+      var data = table.row($tr).data();
+      alert( 'You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.' );
+    } );
+
+    // Delete a record
+    table.on( 'click', '.remove', function (e) {
+      $tr = $(this).closest('tr');
+      table.row($tr).remove().draw();
+      e.preventDefault();
+    } );
+
+    //Like record
+    table.on( 'click', '.like', function () {
+      alert('You clicked on Like button');
+    });
+
+    $('.card .material-datatables label').addClass('form-group');
+        });
+  </script>
+</html>

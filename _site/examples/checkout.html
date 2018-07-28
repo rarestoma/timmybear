@@ -1,0 +1,682 @@
+
+
+
+
+
+
+
+<html>
+<head>
+
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Hermes-Dashboard</title>
+
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!--  Bootstrap core CSS  -->
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+
+<!--  Hermes Dashboard CSS    -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hd.css">
+
+<!--  Fonts and Icons   -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hermes-icons.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href='http://fonts.googleapis.com/css?family=Roboto:900|Lobster|Montserrat:400,500,600,900|Muli:900|Pacifico|Abril+Fatface|Dosis:800' rel='stylesheet' type='text/css'>
+
+
+</head>
+  <body class="login">
+    <nav class="navbar navbar-expand-lg   navbar-absolute ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="../assets/img/timmy-text-white.png"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-collapse-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="./index.html">
+                <img src="../assets/img/logo-blue.png">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar_global" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="fa fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav navbar-left">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">ACASA</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="products.html">MAGAZIN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">DESPRE NOI</a>
+        </li>
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="btn btn-orange btn-round btn-shadow" href="login.html">LOGHEAZA-TE</i></a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="btn btn-blue btn-icon btn-round btn-shadow" href="cart.html">COSUL MEU<i class="fa fa-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="section-first section-first-blue">
+      <div class="row">
+        <div class="col-md-8 mr-auto ml-auto text-center">
+          <h1>CHECKOUT</h1>
+          <h2>CHECKOUT</h2>
+
+        </div>
+
+        <div class="col-md-10 mr-auto ml-auto">
+            <!--      Wizard container        -->
+            <div class="wizard-container">
+                <div class="card card-wizard" data-color="primary" id="wizardProfile">
+                    <form action="" method="">
+                <!--        You can switch " data-color="primary" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
+                        <div class="card-header text-center">
+
+                              <div class="wizard-navigation">
+                                <div class="progress-with-circle">
+              									     <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" style="width: 18%;"></div>
+              									</div>
+                                <ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#about" data-toggle="tab">
+                                          <i class="fa fa-map-marker"></i>
+                                          <p>Adresa</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#account" data-toggle="tab">
+                                          <i class="fa fa-shopping-bag"></i>
+                                          <p>Livrare si plati</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#address" data-toggle="tab">
+                                          <i class="fa fa-check"></i>
+                                          <p>Confirmarea comenzii</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                              </div>
+                        </div>
+
+                        <div class="card-body">
+
+
+                            <div class="collapse" id="collapseExample" style="">
+                              <div class="product">
+
+                                <div class="product-image">
+                                  <img src="../assets/img/sock1.png">
+                                </div>
+                                <div class="product-details">
+                                  <div class="product-title">Duck socks</div>
+                                </div>
+                                <div class="product-price">39.99</div>
+                                <div class="product-line-text float-left">2</div>
+                                <div class="product-line-price float-right mr-5">79.98</div>
+
+                              </div>
+
+                              <div class="product">
+
+                                <div class="product-image">
+                                  <img src="../assets/img/sock1.png">
+                                </div>
+                                <div class="product-details">
+                                  <div class="product-title">Duck socks</div>
+                                </div>
+                                <div class="product-price">39.99</div>
+                                <div class="product-line-text float-left">2</div>
+                                <div class="product-line-price float-right mr-5">79.98</div>
+
+                              </div>
+                            </div>
+
+                            <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" class="collapsed">
+                              <button class="btn btn-blue btn-lg"><i class="fa fa-shopping-cart icon-left"></i>Vezi cosul<i class="fa fa-sort-down icon-right"></i></button>
+                            </a>
+
+                            <div class="totals">
+                              <div class="totals-item">
+                                <label>Subtotal</label>
+                                <div class="totals-value" id="cart-subtotal">71.97</div>
+                              </div>
+                              <div class="totals-item">
+                                <label>Shipping</label>
+                                <div class="totals-value" id="cart-shipping">15.00</div>
+                              </div>
+                              <div class="totals-item totals-item-total">
+                                <label>Grand Total</label>
+                                <div class="totals-value" id="cart-total">90.57</div>
+                              </div>
+                            </div>
+
+                            <img src="../assets/img/ljmblue.png" class="img-bear">
+                            <div class="tab-content">
+                                <div class="tab-pane show active" id="about">
+                                  <h3 class="info-text"> Buyer informations</h3>
+                                  <div class="row mt-3">
+
+
+                                        <div class="col-sm-6 text-left">
+                                          <div class="form-group">
+                                            <label for="firstname" class="req">NUME:</label>
+                                            <input type="text" name="firstname" class="form-control">
+                                         </div>
+
+                                         <div class="form-group">
+                                           <label for="lastname" class="req">PRENUME:</label>
+                                           <input type="text" name="lastname" class="form-control">
+                                       </div>
+
+                                       <div class="form-group">
+                                         <label for="address" class="req">ADRESA:</label>
+                                         <input type="text" name="address" class="form-control">
+                                       </div>
+
+                                       <div class="form-group">
+                                         <label for="location" class="req">Judet:</label>
+
+                                         <select class="form-control" name="location">
+                                             <option value="Alba">Alba</option>
+                                             <option value="Arad">Arad</option>
+                                             <option value="Arges">Arges</option>
+                                             <option value="Bacau">Bacau</option>
+                                             <option value="Bihor">Bihor</option>
+                                             <option value="Bistrita Nasaud">Bistrita Nasaud</option>
+                                             <option value="Botosani">Botosani</option>
+                                             <option value="Brasov">Brasov</option>
+                                             <option value="Braila">Braila</option>
+                                             <option value="Bucuresti">Bucuresti</option>
+                                             <option value="Buzau">Buzau</option>
+                                             <option value="Caras Severin">Caras Severin</option>
+                                             <option value="Calarasi">Calarasi</option>
+                                             <option value="Cluj">Cluj</option>
+                                             <option value="Constanta">Constanta</option>
+                                             <option value="Covasna">Covasna</option>
+                                             <option value="Dambovita">Dambovita</option>
+                                             <option value="Dolj">Dolj</option>
+                                             <option value="Galati">Galati</option>
+                                             <option value="Giurgiu">Giurgiu</option>
+                                             <option value="Gorj">Gorj</option>
+                                             <option value="Harghita">Harghita</option>
+                                             <option value="Hunedoara">Hunedoara</option>
+                                             <option value="Ialomita">Ialomita</option>
+                                             <option value="Iasi">Iasi</option>
+                                             <option value="Ilfov">Ilfov</option>
+                                             <option value="Maramures">Maramures</option>
+                                             <option value="Mehedinti">Mehedinti</option>
+                                             <option value="Mures">Mures</option>
+                                             <option value="Neamt">Neamt</option>
+                                             <option value="Olt">Olt</option>
+                                             <option value="Prahova">Prahova</option>
+                                             <option value="Satu Mare">Satu Mare</option>
+                                             <option value="Salaj">Salaj</option>
+                                             <option value="Sibiu">Sibiu</option>
+                                             <option value="Suceava">Suceava</option>
+                                             <option value="Teleorman">Teleorman</option>
+                                             <option value="Timis">Timis</option>
+                                             <option value="Tulcea">Tulcea</option>
+                                             <option value="Vaslui">Vaslui</option>
+                                             <option value="Valcea">Valcea</option>
+                                             <option value="Vrancea">Vrancea</option>
+                                         </select>
+                                       </div>
+
+                                       <div class="row">
+                                         <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="codpostal" class="req">Cod postal:</label>
+                                                <input type="number" name="codpostal" class="form-control">
+
+                                            </div>
+                                         </div>
+                                         <div class="col-sm-6">
+                                           <div class="form-group">
+                                             <label for="oras" class="req">oras:</label>
+                                             <input type="text" name="oras" class="form-control">
+                                           </div>
+
+                                         </div>
+                                       </div>
+
+                                       <div class="form-group">
+                                         <label for="tara" class="req">tara:</label>
+                                         <input type="text" name="tara" class="form-control" disabled placeholder="Romania">
+                                       </div>
+
+                                       <div class="form-group">
+                                         <label for="numar" class="req">numar:</label>
+                                         <input type="number" name="numar" class="form-control">
+                                       </div>
+
+                                       <div class="form-group">
+                                         <label for="email" class="req">adresa email:</label>
+                                         <input type="email" name="email" class="form-control">
+                                       </div>
+
+                                       <div class="form-group">
+                                          <label>indicatii referitoare la comanda:</label>
+                                          <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="account">
+                                    <h5 class="info-text"><i class="fa fa-truck"></i> Alege metoda de livrare</h5>
+                                    <div class="form-check">
+
+                                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                      <div class="info info-arrow-left text-center">
+                                        <p class="float-left"> FAN CURIER</p>
+                                        <h5>9,00 LEI</h5>
+                                        <div class="details float-right d-flex">
+                                          <div class="float-left">
+                                            <i class="fa fa-info-circle"></i>
+                                          </div>
+                                          <div class="float-right">
+                                            <p class="text-muted">Timpul de livrare estimat:</p>
+                                            <p>Pana la 48 de ore</p>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <h5 class="info-text"><i class="fa fa-credit-card"></i> Alege metoda de plata</h5>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option2">
+                                      <div class="info info-arrow-left text-center">
+                                        <p class="float-left"> PLATA LA LIVRARE - RAMBURS</p>
+                                        <div class="details float-right d-flex">
+                                          <div class="float-left">
+                                            <i class="fa fa-info-circle"></i>
+                                          </div>
+                                          <div class="float-right">
+                                            <p class="text-muted">Timpul de livrare estimat:</p>
+                                            <p>Pana la 48 de ore</p>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="form-check">
+                                      <input class="form-check-input mt-5" type="radio" name="exampleRadios2" id="exampleRadios3" value="option2" >
+                                      <div class="info info-arrow-left text-center">
+                                        <p class="float-left"> PLATA CU CARDUL</p>
+                                        <div class="details float-right d-flex">
+                                          <div class="float-left">
+                                            <i class="fa fa-info-circle"></i>
+                                          </div>
+                                          <div class="float-right">
+                                            <p class="text-muted">Dupa plasarea comenzii, vei fi directionat catre pagina Netopia mobilPay in vederea introducerii datelor necesare pentru achitarea comenzii.</p>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <hr>
+                                    <div class="row payment">
+                                      <div class="col-sm-6">
+                                        <div class="mt-5">
+                                          <div class="d-flex pay-info">
+                                            <h6 class="color-default">Forma platii:</h6>
+                                            <h6 class="ml-3">Ramburs</h6>
+                                          </div>
+                                          <div class="d-flex pay-info">
+                                            <h6 class="color-default">Modalitatea de livrare:</h6>
+                                            <h6 class="ml-3">FAN CURIER</h6>
+                                          </div>
+                                          <div class="d-flex pay-info">
+                                            <h6 class="color-default">Datele cumparatorului:</h6>
+                                            <h6 class="ml-3">RARES TOMA, GEORGE ENESCU, 42/50, BUCURESTI, 010303, ROMANIA</h6>
+                                          </div>
+
+                                          <div class="d-flex pay-info">
+                                            <h6 class="color-default">Datele livrarii:</h6>
+                                            <h6 class="ml-3">RARES TOMA, GEORGE ENESCU, 42/50, BUCURESTI, 010303, ROMANIA</h6>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-6 text-center">
+
+
+                                        <div class="mt-5">
+                                          <div class="d-flex pay-info">
+                                            <h6 class="color-default">Subtotal:</h6>
+                                            <h6 class="ml-3">71.97LEI</h6>
+                                          </div>
+                                          <div class="d-flex pay-info">
+                                            <h6 class="color-default">Shipping:</h6>
+                                            <h6 class="ml-3">9.00LEI</h6>
+                                          </div>
+                                          <div class="d-flex pay-info">
+                                            <h6 class="color-default">Grand Total:</h6>
+                                            <h6 class="ml-3">80.97LEI</h6>
+                                          </div>
+
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="address">
+                                    <div class="row justify-content-center">
+                                        <div class="col-sm-12">
+                                            <h5 class="info-text color-orange"> MULTUMIM PENTRU COMANDA PLASATA!</h5>
+                                            <div class="info text-center mb-5">
+                                              <p class="float-left"> 19248-241412-MT2</p>
+
+                                              <div class="details float-right d-flex">
+
+                                                <div class="float-right">
+                                                  <p class="text-muted">Acesta este numarul comenzii tale.</p>
+
+                                                </div>
+                                              </div>
+                                           </div>
+
+                                           <div class="info text-center mb-5">
+                                             <p class="float-left"> TOMAIRARES@GMAIL.COM</p>
+
+                                             <div class="details float-right d-flex">
+
+                                               <div class="float-right">
+                                                 <p class="text-muted">Adresa de e-mail la care vei primi informatii despre statusul comenzii tale.</p>
+
+                                               </div>
+                                             </div>
+                                          </div>
+
+                                          <div class="info text-center mb-5">
+                                            <p class="float-left"> URMARIRE COLET</p>
+
+                                            <div class="details float-right d-flex">
+
+                                              <div class="float-right">
+                                                <p class="text-muted">Numarul de transport va fi trimis pe e-mail in momentul expedierii comenzii.</p>
+
+                                              </div>
+                                            </div>
+                                         </div>
+
+                                         <div class="info text-center mb-5">
+                                           <p class="float-left"> CONTUL CLIENTULUI</p>
+
+                                           <div class="details float-right d-flex">
+
+                                             <div class="float-right">
+                                               <p class="text-muted">Acolo poti verifica statusul comenzilor tale si sa urmaresti livrarea(in cazul in care esti client inregistrat).</p>
+
+                                             </div>
+                                           </div>
+                                        </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="float-right">
+                                <input type='button' class='btn btn-next  btn-blue btn-lg' name='next' value='Next' />
+                                <input type='button' class='btn btn-finish  btn-primary btn-lg' name='finish' value='Finish' />
+                            </div>
+
+                            <div class="pull-left">
+                                <input type='button' class='btn btn-previous btn-fill btn-default btn-lg' name='previous' value='Previous' />
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div> <!-- wizard container -->
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="pt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="title-social">Our Social</h1>
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">Contact Us</h5>
+        <ul class="list-group mt-5 mb-5">
+          <li class="list-group-item">rarestoma@timmybear.com</li>
+          <li class="list-group-item">tomarares@timmybear.com</li>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">More</h5>
+        <ul class="list-group mt-5 mb-5">
+          <a href="index.html" class="list-group-item">Home</a>
+          <a href="products.html" class="list-group-item">Shop</a>
+          <a href="about.html" class="list-group-item">About us</a>
+          <a href="terms.html" class="list-group-item">Terms and conditions</a>
+          <a href="contact.html" class="list-group-item">Contact us</a>
+
+      </div>
+
+      <div class="col-sm-2">
+        <h5 class="title">Instagram</h5>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="title">Facebook</h5>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="title">Twitter</h5>
+        <p class="mt-5 pt-5" style="width:200px;"> © 2018 Timmy Bear </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+
+    	<script src="../assets/js/core/bootstrap.min.js"></script>
+      <script src="../assets/js/hd.js"></script>
+      <!-- Forms Validations Plugin -->
+      <script src="../assets/js/plugins/jquery.validate.min.js"></script>
+
+      <!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
+      <script src="../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
+
+     <script>
+
+      $(document).ready(function(){
+          var $validator = $('.card-wizard form').validate({
+            rules: {
+              firstname: {
+                required: true,
+                minlength: 3
+              },
+              lastname: {
+                required: true,
+                minlength: 3
+              },
+              email: {
+                required: true,
+                minlength: 3,
+              },
+              number: {
+                required: true,
+                minlength: 3,
+              },
+
+              address:{
+                required: true,
+                minlength: 20,
+              },
+
+              codpostal:{
+                required: true,
+              },
+              oras:{
+                required: true,
+              },
+
+              numar:{
+                required: true,
+              }
+
+              },
+              highlight: function(element) {
+                  $(element).closest('.form-group').removeClass('has-success').addClass('has-danger');
+              },
+              success: function(element) {
+                  $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+              }
+        });
+
+          // Wizard Initialization
+          $('.card-wizard').bootstrapWizard({
+              'tabClass': 'nav nav-pills',
+              'nextSelector': '.btn-next',
+              'previousSelector': '.btn-previous',
+
+              onNext: function(tab, navigation, index) {
+                var $valid = $('.card-wizard form').valid();
+                if(!$valid) {
+                  $validator.focusInvalid();
+                  return false;
+                }
+              },
+
+              onInit : function(tab, navigation, index){
+                //check number of tabs and fill the entire row
+                var $total = navigation.find('li').length;
+                $width = 100/$total;
+
+                navigation.find('li').css('width',$width + '%');
+
+             },
+
+              onTabClick : function(tab, navigation, index){
+                  var $valid = $('.card-wizard form').valid();
+
+                  if(!$valid){
+                      return false;
+                  } else{
+                      return true;
+                  }
+              },
+
+              onTabShow: function(tab, navigation, index) {
+                  var $total = navigation.find('li').length;
+                  var $current = index+1;
+
+                  var $wizard = navigation.closest('.card-wizard');
+
+                  // If it's the last tab then hide the last button and show the finish instead
+                  if($current >= $total) {
+                      $($wizard).find('.btn-next').hide();
+                      $($wizard).find('.btn-finish').show();
+                  } else {
+                      $($wizard).find('.btn-next').show();
+                      $($wizard).find('.btn-finish').hide();
+                  }
+
+                  //update progress
+                  var move_distance = 100 / $total;
+                  move_distance = move_distance * (index) + move_distance / 2;
+
+                  $wizard.find($('.progress-bar')).css({width: move_distance + '%'});
+                  //e.relatedTarget // previous tab
+
+                  $wizard.find($('.card-wizard .nav-pills li .nav-link.active')).addClass('checked');
+
+                  $(":radio").on('click', function(){
+                        	$(this).parent().toggleClass("checked");
+                    });
+
+              }
+          });
+
+
+          // Prepare the preview for profile picture
+          $("#wizard-picture").change(function(){
+              readURL(this);
+          });
+
+          $('[data-toggle="wizard-radio"]').click(function(){
+              wizard = $(this).closest('.card-wizard');
+              wizard.find('[data-toggle="wizard-radio"]').removeClass('active');
+              $(this).addClass('active');
+              $(wizard).find('[type="radio"]').removeAttr('checked');
+              $(this).find('[type="radio"]').attr('checked','true');
+          });
+
+          $('[data-toggle="wizard-checkbox"]').click(function(){
+              if( $(this).hasClass('active')){
+                  $(this).removeClass('active');
+                  $(this).find('[type="checkbox"]').removeAttr('checked');
+              } else {
+                  $(this).addClass('active');
+                  $(this).find('[type="checkbox"]').attr('checked','true');
+              }
+          });
+
+          $('.set-full-height').css('height', 'auto');
+
+           //Function to show image before upload
+
+          function readURL(input) {
+              if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+
+                  reader.onload = function (e) {
+                      $('#wizardPicturePreview').attr('src', e.target.result).fadeIn('slow');
+                  }
+                  reader.readAsDataURL(input.files[0]);
+              }
+          }
+
+
+      });
+
+      </script>
+  </body>
+</html>

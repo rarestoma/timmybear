@@ -1,0 +1,217 @@
+
+
+
+
+
+
+
+<html>
+<head>
+
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Hermes-Dashboard</title>
+
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!--  Bootstrap core CSS  -->
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+
+<!--  Hermes Dashboard CSS    -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hd.css">
+
+<!--  Fonts and Icons   -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hermes-icons.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href='http://fonts.googleapis.com/css?family=Roboto:900|Lobster|Montserrat:400,500,600,900|Muli:900|Pacifico|Abril+Fatface|Dosis:800' rel='stylesheet' type='text/css'>
+
+</head>
+  <body class="cart">
+
+    <nav class="navbar navbar-expand-lg   navbar-absolute ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="../assets/img/timmy-text-white.png"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-collapse-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="./index.html">
+                <img src="../assets/img/logo-blue.png">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar_global" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="fa fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav navbar-left">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">ACASA</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="products.html">MAGAZIN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">DESPRE NOI</a>
+        </li>
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="btn btn-orange btn-round btn-shadow" href="login.html">LOGHEAZA-TE</i></a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="btn btn-blue btn-icon btn-round btn-shadow" href="cart.html">COSUL MEU<i class="fa fa-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="section-first section-first-blue">
+      <div class="row">
+        <div class="col-md-10 mr-auto ml-auto text-center">
+          <h1>COSUL MEU</h1>
+          <h2>COSUL MEU</h2>
+          <div class="card card-shopping">
+            <div class="shopping-cart">
+              <div class="column-labels">
+                <label class="product-image">Image</label>
+                <label class="product-details">Product</label>
+                <label class="product-price">Price</label>
+                <label class="product-quantity">Quantity</label>
+                <label class="product-removal">Remove</label>
+                <label class="product-line-price">Total</label>
+              </div>
+
+              <div class="product">
+                <div class="product-image">
+                  <img src="../assets/img/sock1.png">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Duck socks</div>
+                  <p class="product-description">The best dog bones of all time. Holy crap. Your dog will be begging for these things! I got curious once and ate one myself. I'm a fan.</p>
+                </div>
+                <div class="product-price">39.99</div>
+                <div class="product-quantity">
+                  <input type="number" value="2" min="1">
+                </div>
+                <div class="product-removal">
+                  <button class="btn remove-product">
+                    Remove
+                  </button>
+                </div>
+                <div class="product-line-price">79.98</div>
+              </div>
+
+              <div class="product">
+                <div class="product-image">
+                  <img src="../assets/img/sock2.png">
+                </div>
+                <div class="product-details">
+                  <div class="product-title">Tank socks</div>
+                  <p class="product-description">Who doesn't like lamb and rice? We've all hit the halal cart at 3am while quasi-blackout after a night of binge drinking in Manhattan. Now it's your dog's turn!</p>
+                </div>
+                <div class="product-price">39.99</div>
+                <div class="product-quantity">
+                  <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                  <button class="btn remove-product">
+                    Remove
+                  </button>
+                </div>
+                <div class="product-line-price">39.99</div>
+              </div>
+
+              <div class="totals">
+                <div class="totals-item">
+                  <label>Subtotal</label>
+                  <div class="totals-value" id="cart-subtotal">71.97</div>
+                </div>
+                <div class="totals-item">
+                  <label>Tax (5%)</label>
+                  <div class="totals-value" id="cart-tax">3.60</div>
+                </div>
+                <div class="totals-item">
+                  <label>Shipping</label>
+                  <div class="totals-value" id="cart-shipping">15.00</div>
+                </div>
+                <div class="totals-item totals-item-total">
+                  <label>Grand Total</label>
+                  <div class="totals-value" id="cart-total">90.57</div>
+                </div>
+              </div>
+
+                  <a href="checkout.html" class="btn btn-lg btn-checkout">Checkout</a>
+
+            </div>
+
+            <img src="../assets/img/ljmblue.png" class="timmy">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="pt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="title-social">Our Social</h1>
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">Contact Us</h5>
+        <ul class="list-group mt-5 mb-5">
+          <li class="list-group-item">rarestoma@timmybear.com</li>
+          <li class="list-group-item">tomarares@timmybear.com</li>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">More</h5>
+        <ul class="list-group mt-5 mb-5">
+          <a href="index.html" class="list-group-item">Home</a>
+          <a href="products.html" class="list-group-item">Shop</a>
+          <a href="about.html" class="list-group-item">About us</a>
+          <a href="terms.html" class="list-group-item">Terms and conditions</a>
+          <a href="contact.html" class="list-group-item">Contact us</a>
+
+      </div>
+
+      <div class="col-sm-2">
+        <h5 class="title">Instagram</h5>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="title">Facebook</h5>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="title">Twitter</h5>
+        <p class="mt-5 pt-5" style="width:200px;"> © 2018 Timmy Bear </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+    	<script src="../assets/js/core/bootstrap.min.js"></script>
+      <script src="../assets/js/cart.js"></script>
+  </body>
+</html>

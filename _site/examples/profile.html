@@ -1,0 +1,350 @@
+
+
+
+
+
+
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Hermes-Dashboard</title>
+
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!--  Bootstrap core CSS  -->
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+
+<!--  Hermes Dashboard CSS    -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hd.css">
+
+<!--  Fonts and Icons   -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hermes-icons.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href='http://fonts.googleapis.com/css?family=Roboto:900|Lobster|Montserrat:400,500,600,900|Muli:900|Pacifico|Abril+Fatface|Dosis:800' rel='stylesheet' type='text/css'>
+
+</head>
+  <body class="login">
+
+    <nav class="navbar navbar-expand-lg   navbar-absolute ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="../assets/img/timmy-text-white.png"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-collapse-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="./index.html">
+                <img src="../assets/img/logo-blue.png">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar_global" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="fa fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav navbar-left">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">ACASA</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="products.html">MAGAZIN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">DESPRE NOI</a>
+        </li>
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="btn btn-orange btn-round btn-shadow" href="login.html">LOGHEAZA-TE</i></a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="btn btn-blue btn-icon btn-round btn-shadow" href="cart.html">COSUL MEU<i class="fa fa-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="section-first section-first-blue">
+      <div class="row">
+        <div class="col-md-10 mr-auto ml-auto text-center">
+          <h1>CONTUL MEU</h1>
+          <h2>CONTUL MEU</h2>
+          <div class="card card-white card-account mb-5 mt-5">
+            <div class="card-header">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">ADRESA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="password-tab" data-toggle="tab" href="#password" role="tab" aria-controls="password" aria-selected="false">SCHIMBA PAROLA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="purchase-tab" data-toggle="tab" href="#purchase" role="tab" aria-controls="purchase" aria-selected="false">ISTORIC CUMPARATURI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="remove-tab" data-toggle="tab" href="#remove" role="tab" aria-controls="remove" aria-selected="false">STERGERE CONT</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group text-left">
+                        <label for="account_name" class="req">Nume si prenume:</label>
+                        <input type="text" class="form-control" id="account_name">
+                        <label for="account_firm">Numele firmei(optional) in cazul in care comanzi la locul de munca:</label>
+                        <input type="text" class="form-control"  id="account_firm">
+                        <label for="account_address" class="req">Adresa:</label>
+                        <input type="text" class="form-control" id="account_address">
+                        <label for="location" class="req">Judet:</label>
+
+                        <select class="form-control" id="location">
+                            <option value="Alba">Alba</option>
+                            <option value="Arad">Arad</option>
+                            <option value="Arges">Arges</option>
+                            <option value="Bacau">Bacau</option>
+                            <option value="Bihor">Bihor</option>
+                            <option value="Bistrita Nasaud">Bistrita Nasaud</option>
+                            <option value="Botosani">Botosani</option>
+                            <option value="Brasov">Brasov</option>
+                            <option value="Braila">Braila</option>
+                            <option value="Bucuresti">Bucuresti</option>
+                            <option value="Buzau">Buzau</option>
+                            <option value="Caras Severin">Caras Severin</option>
+                            <option value="Calarasi">Calarasi</option>
+                            <option value="Cluj">Cluj</option>
+                            <option value="Constanta">Constanta</option>
+                            <option value="Covasna">Covasna</option>
+                            <option value="Dambovita">Dambovita</option>
+                            <option value="Dolj">Dolj</option>
+                            <option value="Galati">Galati</option>
+                            <option value="Giurgiu">Giurgiu</option>
+                            <option value="Gorj">Gorj</option>
+                            <option value="Harghita">Harghita</option>
+                            <option value="Hunedoara">Hunedoara</option>
+                            <option value="Ialomita">Ialomita</option>
+                            <option value="Iasi">Iasi</option>
+                            <option value="Ilfov">Ilfov</option>
+                            <option value="Maramures">Maramures</option>
+                            <option value="Mehedinti">Mehedinti</option>
+                            <option value="Mures">Mures</option>
+                            <option value="Neamt">Neamt</option>
+                            <option value="Olt">Olt</option>
+                            <option value="Prahova">Prahova</option>
+                            <option value="Satu Mare">Satu Mare</option>
+                            <option value="Salaj">Salaj</option>
+                            <option value="Sibiu">Sibiu</option>
+                            <option value="Suceava">Suceava</option>
+                            <option value="Teleorman">Teleorman</option>
+                            <option value="Timis">Timis</option>
+                            <option value="Tulcea">Tulcea</option>
+                            <option value="Vaslui">Vaslui</option>
+                            <option value="Valcea">Valcea</option>
+                            <option value="Vrancea">Vrancea</option>
+                        </select>
+
+                        <div class="row mt-5">
+                          <div class="col-sm-6">
+                            <label for="account_code" class="req">Cod Postal:</label>
+                            <input type="text" class="form-control" id="account_code">
+                          </div>
+
+                          <div class="col-sm-6">
+                            <label for="account_city" class="req">Orasul:</label>
+                            <input type="text" class="form-control" id="account_city">
+
+                          </div>
+
+                          <div class="col-sm-6">
+                            <label for="account_sex" class="req">Sexul:</label>
+                            <select class="form-control" id="account-sex">
+                              <option>Barbat</option>
+                              <option>Femeie</option>
+
+                            </select>
+                          </div>
+
+                          <div class="col-sm-6">
+                            <label for="account_number" class="req">Numar de telefon:</label>
+                            <input type="number" class="form-control" id="account_number">
+                          </div>
+                        </div>
+
+                        <label for="account_email" class="req">Adresa email:</label>
+                        <input type="email" class="form-control" id="account_email">
+
+
+
+
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="password" role="tabpanel" aria-labelledby="password-tab">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group text-left">
+                        <label for="account_old_password">Parola curenta:</label>
+                        <input type="password" class="form-control" id="account_old_password">
+
+                        <label for="account_new_password">Noua parola:</label>
+                        <input type="password" class="form-control" id="account_new_password">
+
+                        <label for="account_new_password_verify">Reintrodu noua parola:</label>
+                        <input type="password" class="form-control" id="account_new_password_verify">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade text-left" id="purchase" role="tabpanel" aria-labelledby="purchase-tab">
+
+                    <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <div class="product">
+
+                        <div class="product-line-text d-inline"><i class="fa fa-plus"></i>DETALII</div>
+                        <div class="product-line-text d-inline">2421414-231312-MBR</div>
+                        <div class="product-line-text small d-inline"> Comanda in curs de procesare</div>
+                        <div class="product-line-price d-inline">79.98</div>
+                      </div>
+                    </a>
+
+                  <div class="collapse" id="collapseExample">
+                    <div class="product">
+                      <div class="product-image">
+                        <img src="../assets/img/sock1.png">
+                      </div>
+                      <div class="product-details">
+                        <div class="product-title">Duck socks</div>
+                      </div>
+                      <div class="product-price">39.99</div>
+                      <div class="product-line-text">2</div>
+
+                      <div class="product-line-price float-right">79.98</div>
+                    </div>
+
+                    <div class="product">
+                      <div class="product-image">
+                        <img src="../assets/img/sock1.png">
+                      </div>
+                      <div class="product-details">
+                        <div class="product-title">Duck socks</div>
+                      </div>
+                      <div class="product-price">39.99</div>
+                      <div class="product-line-text">2</div>
+
+
+                      <div class="product-line-price float-right">79.98</div>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="tab-pane fade" id="remove" role="tabpanel" aria-labelledby="remove-tab">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group text-left">
+                        <label for="account_name">Nume:</label>
+                        <input type="text" class="form-control" id="account_name">
+
+                        <label for="account_surname">Prenume:</label>
+                        <input type="text" class="form-control" id="account_surname">
+
+                        <label for="account_email">Adresa email:</label>
+                        <input type="email" class="form-control" id="account_email">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <button class="btn btn-lg btn-danger">STERGE CONTUL</button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="card-footer">
+              <a href="products.html" class="btn btn-lg btn-orange float-left">INAPOI</a>
+              <a href="#d" class="btn btn-lg btn-blue float-right">SALVEAZA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="pt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="title-social">Our Social</h1>
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">Contact Us</h5>
+        <ul class="list-group mt-5 mb-5">
+          <li class="list-group-item">rarestoma@timmybear.com</li>
+          <li class="list-group-item">tomarares@timmybear.com</li>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">More</h5>
+        <ul class="list-group mt-5 mb-5">
+          <a href="index.html" class="list-group-item">Home</a>
+          <a href="products.html" class="list-group-item">Shop</a>
+          <a href="about.html" class="list-group-item">About us</a>
+          <a href="terms.html" class="list-group-item">Terms and conditions</a>
+          <a href="contact.html" class="list-group-item">Contact us</a>
+
+      </div>
+
+      <div class="col-sm-2">
+        <h5 class="title">Instagram</h5>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="title">Facebook</h5>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="title">Twitter</h5>
+        <p class="mt-5 pt-5" style="width:200px;"> © 2018 Timmy Bear </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    	<script src="../assets/js/core/bootstrap.min.js"></script>
+      <script src="../assets/js/hd.js"></script>
+  </body>
+</html>

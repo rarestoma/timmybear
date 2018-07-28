@@ -1,0 +1,443 @@
+
+
+
+
+
+
+
+<html>
+<head>
+
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Hermes-Dashboard</title>
+
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!--  Bootstrap core CSS  -->
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+
+<!--  Hermes Dashboard CSS    -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hd.css">
+
+<!--  Fonts and Icons   -->
+<link rel="stylesheet" type="text/css" href="../assets/css/hermes-icons.css">
+<link rel="stylesheet" type="text/css" href="../assets/css/swiper.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href='http://fonts.googleapis.com/css?family=Roboto:900|Lobster|Montserrat:400,500,600,900|Muli:900|Pacifico|Abril+Fatface|Dosis:800' rel='stylesheet' type='text/css'>
+
+
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg   navbar-black ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="../assets/img/timmy-text-white.png"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-collapse-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a href="./index.html">
+                <img src="../assets/img/logo-blue.png">
+              </a>
+            </div>
+            <div class="col-6 collapse-close">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbar_global" aria-expanded="true" aria-label="Toggle navigation">
+                <i class="fa fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav navbar-left">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">ACASA</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="products.html">MAGAZIN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">DESPRE NOI</a>
+        </li>
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="btn btn-orange btn-round btn-shadow" href="login.html">LOGHEAZA-TE</i></a>
+        </li>
+
+        <li class="nav-item active">
+          <a class="btn btn-blue btn-icon btn-round btn-shadow" href="cart.html">COSUL MEU<i class="fa fa-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+		<div class="section section-product-shop">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner carousel-donut">
+          <div class="carousel-item active">
+            <img class="d-block" src="../assets/img/sock1.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block" src="../assets/img/donut/donut2.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block" src="../assets/img/donut/doni.jpg" alt="Second slide">
+          </div>
+        </div>
+
+        <div class="socks-details donut-socks">
+           <div class="border-circle">
+                     <h2>39<small>RON</small></h2>
+           </div>
+           <div class="size">
+             <form>
+               <label>Size:</label>
+               <select class="custom-select" id="sizeDonut" unselected="">
+                 <option>---</option>
+                 <option>41-45</option>
+                 <option>36-40</option>
+                 <option>31-34(7-8y)</option>
+                 <option>28-30(5-6y)</option>
+                 <option>25-27(3-4y)</option>
+                 <option>21-23(1-2y)</option>
+               </select>
+             </form>
+
+             <form class="ml-3">
+               <label>Qty:</label>
+               <input class="d-inline" type="text" id="quantity" name="quantity" value="1" min="1" max="100">
+               <div class="btn-group" role="group">
+                 <button type="button" class="btn btn-minus"><i class="fa fa-minus"></i></button>
+                 <button type="button" class="btn btn-plus"><i class="fa fa-plus"></i></button>
+
+               </div>
+             </form>
+
+         </div>
+           <div class="row">
+           <div class="col-12 mb-4">
+             <button class="btn btn-cart-blue w-100 mb-4">Add to cart</button>
+
+           <div id="accordion">
+               <div class="card">
+                 <div class="card-header" id="headingOne">
+                   <h5 class="mb-0">
+                     <button class="btn btn-link"  data-toggle="modal" data-target="#sizeModal" >
+                       Size guide
+                     </button>
+                   </h5>
+                 </div>
+
+
+               </div>
+
+
+               <div class="card">
+                 <div class="card-header" id="headingTwo">
+                   <h5 class="mb-0">
+                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                       Product Details
+                       <span class="caret"></span>
+                     </button>
+
+                   </h5>
+                 </div>
+
+                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                   <div class="card-body">
+                     <h2> 80% bbc, 18% pa, 2% elastan </h2>
+                     <img class="mt-2" src="../assets/img/care.png">
+                   </div>
+                 </div>
+               </div>
+             </div>
+
+
+
+
+
+           </div>
+
+
+             <div class="col-lg-4 col-3">
+               <form class="form-inline">
+                 <div class="form-group">
+                   <label>Ron:</label>
+                   <input class="price font-lg" type="number" placeholder="39" id="price" disabled=""/>
+
+                 </div>
+               </form>
+             </div>
+             <div class="col-lg-4 col-3">
+               <form class="form-inline">
+                 <div class="form-group">
+                   <label>Size:</label>
+                   <input type="text" class="font-lg" placeholder="---" id="size-stabil" disabled=""/>
+                 </div>
+               </form>
+             </div>
+
+             <div class="col-lg-4 col-3">
+               <form class="form-inline">
+                 <div class="form-group">
+                   <label>Qty:</label>
+                   <input type="number" class="font-lg" placeholder="1" id="qty-stabil" disabled=""/>
+                 </div>
+               </form>
+             </div>
+
+             <ol class="carousel-indicators">
+               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+
+               </li>
+
+               <li data-target="#carouselExampleIndicators" data-slide-to="1">
+
+               </li>
+
+               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+             </ol>
+
+           </div>
+
+         </div>
+
+      </div>
+      <div class="row pattern donut-pattern">
+        <div class="col-lg-6">
+          <div class="details on-right">
+            <h5 class="title">PRODUCT DESCRIPTION</h5>
+            <p class="description">  Our donut socks are ready to add color to every outfit you love.
+                Full of colour and an interesting design the donuts socks will make your feet look so goooood.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="details on-left">
+            <h5 class="title">COLOURS</h5>
+            <div class="colours mb-3">
+               <div class="color color-blue">
+               </div>
+               <div class="color color-pink">
+               </div>
+               <div class="color color-brown">
+               </div>
+               <div class="color color-dark-brown">
+               </div>
+               <div class="color color-black">
+               </div>
+             </div>
+            <h5 class="title">PATTERN</h5>
+            <img src="../assets/img/donut-pink.png" class="d-inline">
+            <p class="description d-inline">Donut</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 ml-auto">
+            <a href="tank-socks.html">
+              <div class="card card-socks text-center">
+                <img src="../assets/img/donut/donut2.png">
+                <p class="description">Tank socks</p>
+                <div class="colours mb-3">
+                   <div class="color color-dark-blue">
+                   </div>
+                   <div class="color color-green">
+                   </div>
+                   <div class="color color-brown">
+                   </div>
+                   <div class="color color-white">
+                   </div>
+                   <div class="color color-black">
+                   </div>
+                 </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 mr-auto">
+            <a href="duck-socks.html">
+              <div class="card card-socks text-center">
+                <img src="../assets/img/donut/donut2.png">
+                <p class="description">Duck socks</p>
+                <div class="colours">
+                   <div class="color color-purple">
+                   </div>
+                   <div class="color color-yellow">
+                   </div>
+                   <div class="color color-orange">
+                   </div>
+                   <div class="color color-white">
+                   </div>
+                   <div class="color color-black">
+                   </div>
+                 </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="sizeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Size guide</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+           </button>
+         </div>
+         <div class="modal-body">
+           <table border="0">
+             <tbody>
+             <tr>
+               <td>Sock Size</td>
+               <td class="fw-600">21-24</td>
+               <td class="fw-600">25-27</td>
+               <td class="fw-600">28-30</td>
+               <td class="fw-600">31-35</td>
+               <td class="fw-600">36-40</td>
+               <td class="fw-600">41-46</td>
+
+             </tr>
+             <tr>
+               <td>EUR Shoe Size<span></span></td>
+               <td>21-24</td>
+               <td>25-27</td>
+               <td>28-30</td>
+               <td>31-35</td>
+               <td>36-40</td>
+               <td>41-46</td>
+             </tr>
+             <tr>
+             <td>U.S. Sock Size</td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td>9-11</td>
+             <td>10-13</td>
+             </tr>
+             <tr>
+             <td>U.S. M Shoe Size</td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td><span>4½-7½</span></td>
+             <td>8-12</td>
+             </tr>
+             <tr>
+             <td>U.S. W Shoe Size</td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td><span>5½-9½</span></td>
+             <td><span>10-12½</span></td>
+             </tr>
+             <tr>
+             <td>U.K. M Shoe Size</td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td><span>4-7</span></td>
+             <td><span>7,5-11,5</span></td>
+             </tr>
+             <tr>
+             <td>U.K. W Shoe Size</td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td><span>3,5-6,5</span></td>
+             <td><span>7-11</span></td>
+             </tr>
+             <tr>
+             <td>JPN Shoe Size</td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td><span>23-25,5</span></td>
+             <td><span>26-29,5</span></td>
+             </tr>
+             <tr>
+             <td>Age</td>
+             <td>1-2years</td>
+             <td>3-4years</td>
+             <td>5-6years</td>
+             <td>7-8years</td>
+             </tr>
+
+             </tbody>
+             </table>
+         </div>
+
+       </div>
+     </div>
+   </div>
+
+    <footer class="pt-5">
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="title-social">Our Social</h1>
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">Contact Us</h5>
+        <ul class="list-group mt-5 mb-5">
+          <li class="list-group-item">rarestoma@timmybear.com</li>
+          <li class="list-group-item">tomarares@timmybear.com</li>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <h5 class="title">More</h5>
+        <ul class="list-group mt-5 mb-5">
+          <a href="index.html" class="list-group-item">Home</a>
+          <a href="products.html" class="list-group-item">Shop</a>
+          <a href="about.html" class="list-group-item">About us</a>
+          <a href="terms.html" class="list-group-item">Terms and conditions</a>
+          <a href="contact.html" class="list-group-item">Contact us</a>
+
+      </div>
+
+      <div class="col-sm-2">
+        <h5 class="title">Instagram</h5>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="title">Facebook</h5>
+      </div>
+      <div class="col-sm-2">
+        <h5 class="title">Twitter</h5>
+        <p class="mt-5 pt-5" style="width:200px;"> © 2018 Timmy Bear </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    	<script src="../assets/js/core/bootstrap.min.js"></script>
+      <script src="../assets/js/swiper.min.js"></script>
+      <script src="../assets/js/hd.js"></script>
+
+  </body>
+</html>

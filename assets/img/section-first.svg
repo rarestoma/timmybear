@@ -1,0 +1,21 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366.5 958.5">
+  <defs>
+    <style>
+      .cls-1{fill:#fff;}
+      .cls-1,.cls-3,.cls-5{stroke:#000;stroke-miterlimit:10;}
+      .cls-2,.cls-3{fill:url(#SVGID_1_);}
+      .cls-4,.cls-5{fill:url(#SVGID_1_);}
+    </style>
+
+    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1093.74" y1="460.3343" x2="1093.74" y2="459.3689" gradientTransform="matrix(1441.34 0 0 -269.79 -1575731.125 124205.6875)">
+    	<stop  offset="0" style="stop-color:#2021F5"/>
+    	<stop  offset="1" style="stop-color:#314AF1"/>
+    </linearGradient>
+  </defs>
+  <title>section-first</title>
+<path class="cls-1" d="M696.5,373.5"/>
+<path class="cls-2" d="M.5,520.5a2036.69,2036.69,0,0,0,661-151A2036.87,2036.87,0,0,0,1247,0h119q.25,168.75.5,337.5-.25,143.75-.5,287.5c-105.85,37.59-191.88,67.91-249,88C815.13,819.15,750.42,839.95,651,845c-49,2.49-59.91-1.22-265-22C220.76,806.26,86.75,794.38,0,787Z"/><path class="cls-3" d="M-292.5,166.5"/>
+<path class="cls-4" d="M591.45,843.88,1244,942l122.5,16.5q-.25-170.75-.5-341.5Z"/>
+<path class="cls-5" d="M1467.5,582.5"/>
+<path class="cls-4" d="M571,847"/>
+<path class="cls-4" d="M1253,1007"/></svg>

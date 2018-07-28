@@ -1,0 +1,298 @@
+<div class="sidebar">
+    <div class="logo">
+            <a href="http://mutidesign.com">
+                <span class="logo-mini">
+                    H
+                </span>
+                <span class="logo-normal">
+                    Hermes
+                </span>
+            </a>
+        </div><!--logo-->
+    <div class="sidebar-wrapper">
+        <div class="user">
+            <div class="info">
+                <div class="photo">
+                    <img src="{{ path-assets }}/assets/img/faces/marc.jpg" />
+                </div>
+                <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                    <span class="sidebar-normal">
+                        Marco Solieri
+                        <b class="caret"></b>
+                    </span>
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <ul class="nav">
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-mini">MP</span>
+                                <span class="sidebar-normal">My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-mini">EP</span>
+                                <span class="sidebar-normal">Edit Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="sidebar-mini">S</span>
+                                <span class="sidebar-normal">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="nav nav-sidebar">
+            <li class="nav-item">
+                <a class="nav-link nav-link-blue {% if page.brand == "Dashboard" %} active {% endif %}" href="{{ path-pages }}/dashboard.html" >
+                    <i class="nc-icon nc-bullet-list-67"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a {% if page.folder == "components" %} class="nav-link nav-link-dark-red collapsed active" aria-expanded="true" {% endif %} data-toggle="collapse" class="nav-link nav-link-dark-red collapsed" href="#Components">
+                    <i class="nc-icon nc-chart-pie-35"></i>
+                    <p>
+                        Components
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse{% if page.folder == "components" %} show {% endif %}" id="Components">
+                    <ul class="nav">
+                        <li>
+                            <a href="{{ path-pages }}/components/buttons.html" class="nav-link nav-link-dark-red {% if page.brand == "Buttons" %} active {% endif %} ">
+                                <span class="sidebar-mini">B</span>
+                                <span  class="sidebar-normal">Buttons</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/components/grid.html" class="nav-link nav-link-dark-red {% if page.brand == "Grid System" %} active {% endif %}">
+                                <span class="sidebar-mini">GS</span>
+                                <span  class="sidebar-normal">Grid System</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/components/panels.html" class="nav-link nav-link-dark-red {% if page.brand == "Panels" %} active {% endif %}">
+                                <span class="sidebar-mini">P</span>
+                                <span  class="sidebar-normal">Panels</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/components/sweet-alert.html" class="nav-link nav-link-dark-red {% if page.brand == "Sweet Alert" %} active {% endif %}">
+                                <span class="sidebar-mini">SA</span>
+                                <span  class="sidebar-normal">Sweet Alert</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/components/notifications.html" class="nav-link nav-link-dark-red {% if page.brand == "Notifications" %} active {% endif %}">
+                                <span class="sidebar-mini">N</span>
+                                <span  class="sidebar-normal">Notifications</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/components/icons.html" class="nav-link nav-link-dark-red {% if page.brand == "Icons" %} active {% endif %}">
+                                <span class="sidebar-mini">I</span>
+                                <span  class="sidebar-normal">Icons</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/components/typography.html" class="nav-link nav-link-dark-red {% if page.brand == "Typography" %} active {% endif %}">
+                                <span class="sidebar-mini">T</span>
+                                <span  class="sidebar-normal">Typography</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a {% if page.folder == "forms" %} class="nav-link nav-link-light-blue collapsed active" aria-expanded="true" {% endif %} data-toggle="collapse" class="nav-link nav-link-light-blue collapsed" href="#Forms">
+                    <i class="nc-icon nc-single-copy-04"></i>
+                    <p>
+                        Forms
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse {% if page.folder == "forms" %} show {% endif %}" id="Forms">
+                    <ul class="nav">
+                        <li>
+                            <a href="{{ path-pages }}/forms/regular.html" class="nav-link nav-link-light-blue {% if page.brand == "Regular Forms" %} active {% endif %}">
+                                <span class="sidebar-mini">RF</span>
+                                <span  class="sidebar-normal">Regular Forms</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/forms/extended.html"
+                            class="nav-link nav-link-light-blue {% if page.brand == "Extended Forms" %} active {% endif %}">
+                                <span class="sidebar-mini">EF</span>
+                                <span  class="sidebar-normal">Extended Forms</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages}}/forms/validation.html" class="nav-link nav-link-light-blue {% if page.brand == "Validation Forms" %} active {% endif %}">
+                                <span class="sidebar-mini">VF</span>
+                                <span  class="sidebar-normal">Validation Forms</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/forms/wizard.html" class="nav-link nav-link-light-blue {% if page.brand == "Wizard" %} active {% endif %}">
+                                <span class="sidebar-mini">W</span>
+                                <span  class="sidebar-normal">Wizard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a{% if page.folder == "tables" %} class="nav-link nav-link-pink collapsed active" aria-expanded="true" {% endif %} data-toggle="collapse" class="nav-link nav-link-pink collapsed" href="#Tables">
+                    <i class="nc-icon nc-calendar-grid-58"></i>
+                    <p>
+                        Tables
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse {% if page.folder == "tables" %} show {% endif %}" id="Tables">
+                    <ul class="nav">
+                        <li>
+                            <a href="{{ path-pages }}/tables/regular.html" class="nav-link nav-link-pink {% if page.brand == "Regular Tables" %} active {% endif %}">
+                                <span class="sidebar-mini">RT</span>
+                                <span  class="sidebar-normal">Regular Tables</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/tables/extended.html" class="nav-link nav-link-pink {% if page.brand == "Extended Tables" %} active {% endif %}">
+                                <span class="sidebar-mini">ET</span>
+                                <span  class="sidebar-normal">Extended Tables</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/tables/datatables.net.html" class="nav-link nav-link-pink {% if page.brand == "DataTables.net" %} active {% endif %}">
+                                <span class="sidebar-mini">DT</span>
+                                <span  class="sidebar-normal">DataTables.net</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a{% if page.folder == "maps" %} class="nav-link nav-link-red collapsed active" aria-expanded="true" {% endif %} data-toggle="collapse" class="nav-link nav-link-red collapsed" href="#Maps" >
+                    <i class="nc-icon nc-pin-3"></i>
+                    <p>
+                        Maps
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse {% if page.folder == "maps" %} show {% endif %}" id="Maps">
+                    <ul class="nav">
+                        <li>
+                            <a href="{{ path-pages }}/maps/google.html" class="nav-link nav-link-red {% if page.brand == "Google Maps" %} active {% endif %}">
+                                <span class="sidebar-mini">GM</span>
+                                <span  class="sidebar-normal">Google Maps</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/maps/fullscreen.html" class="nav-link nav-link-red {% if page.brand == "Full Screen Map" %} active {% endif %}">
+                                <span class="sidebar-mini">FSM</span>
+                                <span  class="sidebar-normal">Full Screen Map</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages}}/maps/vector.html" class="nav-link nav-link-red {% if page.brand == "Vector Map" %} active {% endif %}" >
+                                <span class="sidebar-mini">VM</span>
+                                <span  class="sidebar-normal">Vector Map</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ path-pages }}/charts.html" class="nav-link nav-link-purple {% if page.brand =="Charts" %} active {% endif %}">
+                    <i class="nc-icon nc-chart-bar-32"></i>
+                    <p>Charts</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ path-pages }}/calendar.html" class="nav-link nav-link-blue {% if page.brand == "Calendar" %} active {% endif %}">
+                    <i class="nc-icon nc-watch-time"></i>
+                    <p>Calendar</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a{% if page.folder == "Pages" %} class="nav-link nav-link-orange collapsed active" aria-expanded="true" {% endif %} data-toggle="collapse" class="nav-link nav-link-orange collapsed" href="#Pages">
+                    <i class="nc-icon nc-bag-17"></i>
+                    <p>
+                        Pages
+                        <b class="caret"></b>
+                    </p>
+                </a>
+                <div class="collapse{% if page.folder == "Pages" %} show {% endif %}" id="Pages">
+                    <ul class="nav">
+                        <li>
+                            <a href="{{ path-pages }}/pages/user.html" class="nav-link nav-link-orange {% if page.brand == "User Page" %} active {% endif %}">
+                                <span class="sidebar-mini">UP</span>
+                                <span  class="sidebar-normal">User Page</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/pages/login.html" class="nav-link nav-link-orange {% if page.brand == "Login Page" %} active {% endif %}">
+                                <span class="sidebar-mini">LP</span>
+                                <span  class="sidebar-normal">Login Page</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/pages/register.html" class="nav-link nav-link-orange {% if page.brand == "Register Page" %} active {% endif %}">
+                                <span class="sidebar-mini">RP</span>
+                                <span  class="sidebar-normal">Register Page</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ path-pages }}/pages/lock.html" class="nav-link nav-link-orange {% if page.brand == "Lock Screen Page" %} active {% endif %}">
+                                <span class="sidebar-mini">LSP</span>
+                                <span  class="sidebar-normal">Lock Screen Page</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ path-pages }}/documentation.html" class="nav-link nav-link-green {% if page.brand == "Documentation" %} active {% endif %}">
+                    <i class="nc-icon nc-hat-3"></i>
+                    <p>Documentation</p>
+                </a>
+            </li>
+
+
+            <li class="nav-item">
+                <a href="{{ path-pages }}/cards.html" class="nav-link nav-link-light-purple {% if page.brand == "Cards" %} active {% endif %}">
+                    <i class="nc-icon nc-credit-card"></i>
+                    <p>Cards</p>
+                </a>
+            </li>
+        </ul>
+    </div><!--sidebar-wrapper-->
+</div><!--sidebar-->

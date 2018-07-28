@@ -1,0 +1,78 @@
+---
+---
+
+{% include path/path-assets.html %}
+
+<html>
+<head>
+  {% include head.html %}
+</head>
+  <body class="register">
+    {% include navbar.html %}
+
+    <div class="section-first section-first-blue">
+      <div class="row">
+        <div class="col-md-8 mr-auto ml-auto text-center">
+          <h1>REGISTER</h1>
+          <h2>REGISTER</h2>
+          <div class="card card-register">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Nume si prenume" id="register_name">
+                </div>
+              </div>
+
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email" id="register_email">
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="password" class="form-control" placeholder="Password" id="register_password">
+                </div>
+              </div>
+
+              <div class="col-sm-12 text-left">
+                <div class="checkbox">
+                  <input id="chk_min_age" name="chk_min_age" type="checkbox" value="1">
+                  <label for="chk_min_age">
+                      Confirm ca am implinita varsta de 16 ani.
+                  </label>
+                </div>
+
+                <div class="checkbox">
+                  <input id="chk_terms" name="chk_terms" type="checkbox" value="1">
+                  <label for="chk_terms">
+                      Am citit <a href="terms.html">termenii si conditiile</a> site-ului.
+                  </label>
+                </div>
+
+                <div class="checkbox">
+                  <input id="chk_conf" name="chk_conf" type="checkbox" value="1">
+                  <label for="chk_conf">
+                      Am citit <a href="terms.html">politica de confidentialitate</a> a site-ului.
+                  </label>
+                </div>
+                <img src="../assets/img/ljmblue.png">
+                <button class="btn btn-blue">REGISTER</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  {% include footer.html %}
+
+    <script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+    	<script src="../assets/js/core/bootstrap.min.js"></script>
+      <script src="../assets/js/hd.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<nav class="navbar navbar-nav navbar-expand-md navbar-transparent navbar-absolute navbar-pages" style="display:none;">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggler d-sm-block d-lg-none" data-toggle="collapse" aria-expanded="false" data-target="#navigation-example-2">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="fa fa-bars text-secondary"></i>
+            </button>
+
+            <a class="navbar-brand text-secondary" href="{% if page.brand != "lock-page"%} {{ path-pages }}/dashboard.html {%  else %} #pablo {% endif %}">Hermes Dashboard Pro</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav ml-auto">
+                <li>
+                    <a href="{{ path-pages }}/dashboard.html" class="text-secondary">
+                        <i class="nc-icon nc-bullet-list-67"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class= "{% if page.brand == "register-page"%} active {% endif %}">
+                    <a href="register.html" class="text-secondary">
+                        <i class="nc-icon nc-single-02"></i>
+                        Register
+                    </a>
+                </li>
+                <li class= "{% if page.brand == "login-page" %} active {% endif %}">
+                    <a href="login.html" class="text-secondary">
+                        <i class="nc-icon nc-active-40"></i>
+                        Login
+                    </a>
+                </li>
+                <li class= "{% if page.brand == "lock-page"%} active {% endif %}">
+                    <a href="lock.html" class="text-secondary">
+                        <i class="nc-icon nc-lock-circle-open"></i>
+                        Lock
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
